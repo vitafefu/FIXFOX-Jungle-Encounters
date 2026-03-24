@@ -6,14 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float runSpeed = 9f;
     [SerializeField] private float jumpForce = 8f;
 
-    [Header("Dash")]
-    [SerializeField] private float dashSpeed = 12f;
-    [SerializeField] private float dashDuration = 0.15f;
+    [Header("Double Tap Run")]
     [SerializeField] private float doubleTapTime = 0.25f;
-    [SerializeField] private float dashCooldown = 0.2f;
-    [SerializeField] private bool allowAirDash = false;
 
     [Header("Ground")]
     [SerializeField] private LayerMask groundLayer;
@@ -26,17 +23,18 @@ public class PlayerController : MonoBehaviour
 
     private float lastLeftTapTime = -10f;
     private float lastRightTapTime = -10f;
-    private float dashTimeLeft = 0f;
-    private float lastDashTime = -10f;
-    private int dashDirection = 0;
+
     private int facingDirection = 1;
+
+    private bool isRunning = false;
+    private int runDirection = 0; // -1 = left, 1 = right
 
     public float MoveInput => moveInput;
     public bool IsGrounded { get; private set; }
     public float VerticalSpeed => rb.velocity.y;
-    public bool IsDashing => dashTimeLeft > 0f;
-    public float AnimationSpeed => IsDashing ? 1f : Mathf.Abs(moveInput);
     public int FacingDirection => facingDirection;
+    public bool IsRunning => isRunning;
+    public float AnimationSpeed => Mathf.Abs(rb.velocity.x);
 
     private void Awake()
     {
@@ -53,18 +51,20 @@ public class PlayerController : MonoBehaviour
         else if (moveInput < -0.01f)
             facingDirection = -1;
 
-        HandleDashInput();
+        HandleRunInput();
 
         if (Input.GetButtonDown("Jump"))
             jumpRequested = true;
+
+        StopRunIfNeeded();
     }
 
     private void FixedUpdate()
     {
         IsGrounded = capsuleCol.IsTouchingLayers(groundLayer);
 
-        float xVelocity = IsDashing ? dashDirection * dashSpeed : moveInput * moveSpeed;
-        rb.velocity = new Vector2(xVelocity, rb.velocity.y);
+        float currentSpeed = isRunning ? runSpeed : moveSpeed;
+        rb.velocity = new Vector2(moveInput * currentSpeed, rb.velocity.y);
 
         if (jumpRequested && IsGrounded)
         {
@@ -72,17 +72,17 @@ public class PlayerController : MonoBehaviour
         }
 
         jumpRequested = false;
-
-        if (dashTimeLeft > 0f)
-            dashTimeLeft -= Time.fixedDeltaTime;
     }
 
-    private void HandleDashInput()
+    private void HandleRunInput()
     {
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (Time.time - lastLeftTapTime <= doubleTapTime)
-                TryStartDash(-1);
+            {
+                isRunning = true;
+                runDirection = -1;
+            }
 
             lastLeftTapTime = Time.time;
         }
@@ -90,23 +90,30 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (Time.time - lastRightTapTime <= doubleTapTime)
-                TryStartDash(1);
+            {
+                isRunning = true;
+                runDirection = 1;
+            }
 
             lastRightTapTime = Time.time;
         }
     }
 
-    private void TryStartDash(int direction)
+    private void StopRunIfNeeded()
     {
-        if (Time.time - lastDashTime < dashCooldown)
+        // إذا وقف اللاعب
+        if (Mathf.Abs(moveInput) < 0.01f)
+        {
+            isRunning = false;
+            runDirection = 0;
             return;
+        }
 
-        if (!allowAirDash && !IsGrounded)
-            return;
-
-        dashDirection = direction;
-        facingDirection = direction;
-        dashTimeLeft = dashDuration;
-        lastDashTime = Time.time;
+        // إذا غيّر الاتجاه
+        if ((runDirection == 1 && moveInput < 0) || (runDirection == -1 && moveInput > 0))
+        {
+            isRunning = false;
+            runDirection = 0;
+        }
     }
 }
