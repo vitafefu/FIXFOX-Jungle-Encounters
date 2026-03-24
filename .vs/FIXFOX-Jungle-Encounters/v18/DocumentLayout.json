@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\SmoothZoneCamera2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\SmartCamera2D\\SmoothZoneCamera2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\AdaptiveLagCamera2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\SmartCamera2D\\AdaptiveLagCamera2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\CameraFollow2DStable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\SmartCamera2D\\CameraFollow2DStable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\SmartCamera2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\SmartCamera2D\\SmartCamera2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerAnimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerAnimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +38,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SmoothZoneCamera2D.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\SmoothZoneCamera2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SmartCamera2D\\SmoothZoneCamera2D.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\SmoothZoneCamera2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SmartCamera2D\\SmoothZoneCamera2D.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAgwIUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T13:16:12.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AdaptiveLagCamera2D.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\AdaptiveLagCamera2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SmartCamera2D\\AdaptiveLagCamera2D.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\AdaptiveLagCamera2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SmartCamera2D\\AdaptiveLagCamera2D.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAgwNcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T12:12:45.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraFollow2DStable.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\CameraFollow2DStable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SmartCamera2D\\CameraFollow2DStable.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\CameraFollow2DStable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SmartCamera2D\\CameraFollow2DStable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T11:34:52.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SmartCamera2D.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\SmartCamera2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SmartCamera2D\\SmartCamera2D.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\SmartCamera2D\\SmartCamera2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SmartCamera2D\\SmartCamera2D.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T11:10:41.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PlayerAnimation.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerAnimation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimation.cs",
@@ -30,20 +102,32 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAnimation.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T11:31:32.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-23T11:31:32.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
               "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAgwGMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAgwHYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T11:30:56.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:23:44.13Z",
               "EditorCaption": ""
             }
           ]
