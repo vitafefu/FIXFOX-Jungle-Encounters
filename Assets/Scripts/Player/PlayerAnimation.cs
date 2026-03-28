@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -15,17 +15,17 @@ public class PlayerAnimation : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
-        if (controller == null) return;
+        if (controller == null)
+            return;
 
-        animator.SetFloat("Speed", Mathf.Abs(controller.MoveInput));
+        animator.SetFloat("Speed", controller.AnimationSpeed);
         animator.SetBool("IsGround", controller.IsGrounded);
         animator.SetFloat("YVelocity", controller.VerticalSpeed);
+        animator.SetBool("IsInWater", controller.IsInWater);
+        animator.SetBool("WillLandInWater", controller.WillLandInWater);
 
-        if (controller.MoveInput > 0.01f)
-            spriteRenderer.flipX = false;
-        else if (controller.MoveInput < -0.01f)
-            spriteRenderer.flipX = true;
+        spriteRenderer.flipX = !controller.FacingRight;
     }
 }
