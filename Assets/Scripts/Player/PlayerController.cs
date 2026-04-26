@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Tilemaps;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
@@ -24,6 +25,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask waterLayer;
     [SerializeField] private LayerMask waterZoneLayer;
+    [SerializeField] private LayerMask ladderLayer;
+
+    [Header("Ladder Movement")]
+    [SerializeField] private float climbSpeed = 4f;
+    [SerializeField] private Tilemap ladderTilemap;
 
     [Header("Instant Water Jump Prediction")]
     [SerializeField] private float predictionStepTime = 0.015f;
@@ -88,6 +94,8 @@ public class PlayerController : MonoBehaviour
     public float VerticalSpeed => rb.velocity.y;
     public bool IsInWater { get; private set; }
     public bool IsInWaterZone { get; private set; }
+    public bool IsOnLadder { get; private set; }
+    public bool IsClimbing { get; private set; }
     public bool WillLandInWater => willLandInWaterLatched;
 
     private void Awake()
@@ -103,6 +111,11 @@ public class PlayerController : MonoBehaviour
     {
         moveInputX = Input.GetAxisRaw("Horizontal");
         moveInputY = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            moveInputY = 1f;
+        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            moveInputY = -1f;
 
         if (!waterJumpLocked)
         {
@@ -131,10 +144,21 @@ public class PlayerController : MonoBehaviour
 
         if (IsInWater)
         {
+            IsClimbing = false;
             HandleSwimming();
+        }
+        else if (IsOnLadder)
+        {
+            HandleLadderClimbing();
         }
         else
         {
+            if (IsClimbing)
+            {
+                IsClimbing = false;
+                rb.gravityScale = defaultGravityScale;
+            }
+
             HandleGroundAndAir();
         }
 
@@ -146,7 +170,13 @@ public class PlayerController : MonoBehaviour
     {
         IsInWaterZone = OverlapsLayerWithCapsule(waterZoneLayer, 1f);
         IsInWater = HasRealWaterSubmersion(transform.position);
-        IsGrounded = !IsInWater && capsuleCol.IsTouchingLayers(groundLayer);
+
+        bool ladderOverlap = OverlapsLayerWithCapsule(ladderLayer, 1f);
+        bool ladderByTilemap = IsInsideLadderTilemap();
+
+        IsOnLadder = ladderOverlap || ladderByTilemap;
+
+        IsGrounded = !IsInWater && !IsClimbing && capsuleCol.IsTouchingLayers(groundLayer);
     }
 
     private bool OverlapsLayerWithCapsule(LayerMask mask, float scale)
@@ -163,6 +193,28 @@ public class PlayerController : MonoBehaviour
         );
 
         return hit != null;
+    }
+
+    private bool IsInsideLadderTilemap()
+    {
+        if (ladderTilemap == null)
+            return false;
+
+        Bounds b = capsuleCol.bounds;
+
+        Vector3 center = b.center;
+        Vector3 lower = new Vector3(b.center.x, b.min.y + 0.05f, b.center.z);
+        Vector3 upper = new Vector3(b.center.x, b.max.y - 0.05f, b.center.z);
+
+        return HasLadderTileAtWorldPosition(center)
+            || HasLadderTileAtWorldPosition(lower)
+            || HasLadderTileAtWorldPosition(upper);
+    }
+
+    private bool HasLadderTileAtWorldPosition(Vector3 worldPosition)
+    {
+        Vector3Int cellPosition = ladderTilemap.WorldToCell(worldPosition);
+        return ladderTilemap.HasTile(cellPosition);
     }
 
     private void ApplyWaterEntryDamping()
@@ -238,6 +290,29 @@ public class PlayerController : MonoBehaviour
         {
             if (velocity.y < -maxSwimFallSpeed)
                 velocity.y = -maxSwimFallSpeed;
+        }
+
+        rb.velocity = velocity;
+    }
+
+    private void HandleLadderClimbing()
+    {
+        ClearWaterJumpState();
+
+        rb.gravityScale = 0f;
+
+        Vector2 velocity = rb.velocity;
+
+        velocity.x = moveInputX * moveSpeed;
+
+        if (Mathf.Abs(moveInputY) > 0.01f)
+        {
+            IsClimbing = true;
+            velocity.y = moveInputY * climbSpeed;
+        }
+        else
+        {
+            velocity.y = 0f;
         }
 
         rb.velocity = velocity;
