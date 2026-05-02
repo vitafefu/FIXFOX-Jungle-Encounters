@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerController (1).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\Movement System\\PlayerController (1).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\States\\GroundState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\Movement System\\States\\GroundState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerAnimatorBridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\Movement System\\PlayerAnimatorBridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\States\\LadderState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\Movement System\\States\\LadderState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerSensors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\Movement System\\PlayerSensors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerAnimatorBridge.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerAnimatorBridge.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\PlayerAnimatorBridge.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerAnimatorBridge.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Movement System\\PlayerAnimatorBridge.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAwwMsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T08:48:47.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GroundState.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\States\\GroundState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\States\\GroundState.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\States\\GroundState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Movement System\\States\\GroundState.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwD4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T08:01:31.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerController (1).cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerController (1).cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\PlayerController (1).cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerController (1).cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Movement System\\PlayerController (1).cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAwwI0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T07:46:05.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LadderState.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\States\\LadderState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\States\\LadderState.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\States\\LadderState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Movement System\\States\\LadderState.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAuwG4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T07:45:35.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerSensors.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerSensors.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\PlayerSensors.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerSensors.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Movement System\\PlayerSensors.cs",
+              "ViewState": "AgIAAOcBAAAAAAAAAAAuwAACAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T07:06:36.028Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
