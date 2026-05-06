@@ -3868,6 +3868,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f14e74bebb3e1484a877ef38ed41e554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useDamageFlash: 1
+  damageFlashColor: {r: 1, g: 0.35, b: 0.35, a: 1}
+  damageFlashDuration: 0.12
 --- !u!114 &495250382
 MonoBehaviour:
   m_ObjectHideFlags: 0

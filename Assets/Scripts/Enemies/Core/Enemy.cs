@@ -9,7 +9,7 @@ using UnityEngine;
 /// 2 units = half heart
 /// 4 units = full heart
 /// </summary>
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     public event Action<int, int> OnHealthChanged;
     public event Action<DamageData> OnDamaged;
