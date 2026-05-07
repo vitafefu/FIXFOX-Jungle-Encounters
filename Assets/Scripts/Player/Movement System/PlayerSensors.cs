@@ -43,6 +43,9 @@ public class PlayerSensors : MonoBehaviour
     [Header("Ladder Check")]
     [SerializeField] private Tilemap ladderTilemap;
 
+    [Tooltip("Additional ladder tilemaps. Use this when ladders are split across multiple duplicated Tilemap layers.")]
+    [SerializeField] private Tilemap[] additionalLadderTilemaps;
+
     [Tooltip("Small inward offset for ladder boundary checks. Prevents unstable edge detection.")]
     [SerializeField] private float ladderEdgeInset = 0.03f;
 
@@ -280,14 +283,26 @@ public class PlayerSensors : MonoBehaviour
 
     private bool IsAnyPartTouchingLadder(Bounds b)
     {
-        if (ladderTilemap != null)
-        {
-            return HasLadderTileAtWorldPosition(b.center)
-                || HasLadderTileAtWorldPosition(new Vector2(b.center.x, b.min.y + 0.05f))
-                || HasLadderTileAtWorldPosition(new Vector2(b.center.x, b.max.y - 0.05f))
-                || HasLadderTileAtWorldPosition(new Vector2(b.min.x + 0.05f, b.center.y))
-                || HasLadderTileAtWorldPosition(new Vector2(b.max.x - 0.05f, b.center.y));
-        }
+        Vector2 centerPoint = b.center;
+        Vector2 bottomPoint = new Vector2(b.center.x, b.min.y + 0.05f);
+        Vector2 topPoint = new Vector2(b.center.x, b.max.y - 0.05f);
+        Vector2 leftPoint = new Vector2(b.min.x + 0.05f, b.center.y);
+        Vector2 rightPoint = new Vector2(b.max.x - 0.05f, b.center.y);
+
+        if (IsPointInsideLadder(centerPoint))
+            return true;
+
+        if (IsPointInsideLadder(bottomPoint))
+            return true;
+
+        if (IsPointInsideLadder(topPoint))
+            return true;
+
+        if (IsPointInsideLadder(leftPoint))
+            return true;
+
+        if (IsPointInsideLadder(rightPoint))
+            return true;
 
         Collider2D touchHit = Physics2D.OverlapCapsule(
             b.center,
@@ -362,8 +377,8 @@ public class PlayerSensors : MonoBehaviour
 
     private bool IsPointInsideLadder(Vector2 worldPosition)
     {
-        if (ladderTilemap != null)
-            return HasLadderTileAtWorldPosition(worldPosition);
+        if (HasLadderTileAtWorldPosition(worldPosition))
+            return true;
 
         Collider2D hit = Physics2D.OverlapPoint(worldPosition, ladderLayer);
         return hit != null;
@@ -371,11 +386,28 @@ public class PlayerSensors : MonoBehaviour
 
     private bool HasLadderTileAtWorldPosition(Vector2 worldPosition)
     {
-        if (ladderTilemap == null)
+        if (HasTileInTilemap(ladderTilemap, worldPosition))
+            return true;
+
+        if (additionalLadderTilemaps != null)
+        {
+            for (int i = 0; i < additionalLadderTilemaps.Length; i++)
+            {
+                if (HasTileInTilemap(additionalLadderTilemaps[i], worldPosition))
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
+    private bool HasTileInTilemap(Tilemap tilemap, Vector2 worldPosition)
+    {
+        if (tilemap == null)
             return false;
 
-        Vector3Int cellPosition = ladderTilemap.WorldToCell(worldPosition);
-        return ladderTilemap.HasTile(cellPosition);
+        Vector3Int cellPosition = tilemap.WorldToCell(worldPosition);
+        return tilemap.HasTile(cellPosition);
     }
 
     public bool CanUseStandingCollider(Vector2 standingSize, Vector2 standingOffset)
