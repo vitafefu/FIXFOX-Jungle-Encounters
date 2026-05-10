@@ -9,6 +9,10 @@ public class KnockbackReceiver2D : MonoBehaviour
     [SerializeField] private bool resetVelocityBeforeKnockback = true;
     [SerializeField] private float knockbackControlLockTime = 0.18f;
 
+    [Header("Burst Knockback")]
+    [SerializeField] private bool useBurstVelocity = true;
+    [SerializeField] private bool useDamageDataValuesAsVelocity = true;
+
     [Header("Optional: disable these scripts during knockback")]
     [SerializeField] private MonoBehaviour[] behavioursToDisableDuringKnockback;
 
@@ -37,10 +41,30 @@ public class KnockbackReceiver2D : MonoBehaviour
         if (rb == null)
             return;
 
+        if (forceX <= 0f && forceY <= 0f)
+            return;
+
         if (knockbackRoutine != null)
             StopCoroutine(knockbackRoutine);
 
         knockbackRoutine = StartCoroutine(KnockbackRoutine(sourcePosition, forceX, forceY));
+    }
+
+    public void StopKnockback()
+    {
+        if (knockbackRoutine != null)
+        {
+            StopCoroutine(knockbackRoutine);
+            knockbackRoutine = null;
+        }
+
+        SetBehavioursEnabled(true);
+
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
     }
 
     private IEnumerator KnockbackRoutine(Vector2 sourcePosition, float forceX, float forceY)
@@ -49,15 +73,56 @@ public class KnockbackReceiver2D : MonoBehaviour
 
         float directionX = transform.position.x >= sourcePosition.x ? 1f : -1f;
 
+        if (Mathf.Abs(transform.position.x - sourcePosition.x) < 0.05f)
+        {
+            if (Mathf.Abs(rb.velocity.x) > 0.05f)
+                directionX = -Mathf.Sign(rb.velocity.x);
+            else
+                directionX = 1f;
+        }
+
         if (resetVelocityBeforeKnockback)
             rb.velocity = Vector2.zero;
 
-        rb.AddForce(
-            new Vector2(directionX * forceX, forceY),
-            ForceMode2D.Impulse
-        );
+        if (!useBurstVelocity)
+        {
+            rb.AddForce(
+                new Vector2(directionX * forceX, forceY),
+                ForceMode2D.Impulse
+            );
 
-        yield return new WaitForSeconds(knockbackControlLockTime);
+            yield return new WaitForSeconds(knockbackControlLockTime);
+
+            SetBehavioursEnabled(true);
+            knockbackRoutine = null;
+            yield break;
+        }
+
+        float timer = 0f;
+
+        while (timer < knockbackControlLockTime)
+        {
+            if (rb == null)
+                yield break;
+
+            if (useDamageDataValuesAsVelocity)
+            {
+                rb.velocity = new Vector2(
+                    directionX * forceX,
+                    forceY
+                );
+            }
+            else
+            {
+                rb.AddForce(
+                    new Vector2(directionX * forceX, forceY),
+                    ForceMode2D.Impulse
+                );
+            }
+
+            timer += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
 
         SetBehavioursEnabled(true);
         knockbackRoutine = null;
@@ -73,5 +138,10 @@ public class KnockbackReceiver2D : MonoBehaviour
             if (behavioursToDisableDuringKnockback[i] != null)
                 behavioursToDisableDuringKnockback[i].enabled = enabled;
         }
+    }
+
+    private void OnDisable()
+    {
+        SetBehavioursEnabled(true);
     }
 }

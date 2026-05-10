@@ -53,6 +53,8 @@ public class PlayerDeathHandler : MonoBehaviour
 
     private void HandleDeath()
     {
+        ClearStatusEffectsEverywhere();
+
         if (useDeathAnimation && animator != null)
             animator.SetBool(isDeadParam, true);
 
@@ -74,8 +76,26 @@ public class PlayerDeathHandler : MonoBehaviour
 
     private void HandleRevive()
     {
+        ClearStatusEffectsEverywhere();
+
         if (useDeathAnimation && animator != null)
             animator.SetBool(isDeadParam, false);
+    }
+
+    private void ClearStatusEffectsEverywhere()
+    {
+        PlayerStatusEffects[] effects = GetComponentsInChildren<PlayerStatusEffects>(true);
+
+        for (int i = 0; i < effects.Length; i++)
+        {
+            if (effects[i] != null)
+                effects[i].ClearAllEffects();
+        }
+
+        PlayerStatusEffects parentEffect = GetComponentInParent<PlayerStatusEffects>();
+
+        if (parentEffect != null)
+            parentEffect.ClearAllEffects();
     }
 
     private void SetCollidersEnabled(bool enabled)

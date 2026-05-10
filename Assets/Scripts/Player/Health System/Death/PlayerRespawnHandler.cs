@@ -35,6 +35,8 @@ public class PlayerRespawnHandler : MonoBehaviour
 
     public void Respawn()
     {
+        ClearStatusEffectsEverywhere();
+
         if (respawnRoutine != null)
         {
             StopCoroutine(respawnRoutine);
@@ -61,24 +63,23 @@ public class PlayerRespawnHandler : MonoBehaviour
 
     private void RespawnNow()
     {
+        ClearStatusEffectsEverywhere();
+
         Vector3 respawnPosition = GetRespawnPosition();
 
         if (rb != null)
         {
             RigidbodyInterpolation2D oldInterpolation = rb.interpolation;
 
-            // نوقف أي تأثير فيزيائي أو interpolation مؤقتاً
             rb.interpolation = RigidbodyInterpolation2D.None;
             rb.velocity = Vector2.zero;
             rb.angularVelocity = 0f;
 
-            // Teleport حقيقي
             rb.position = respawnPosition;
             transform.position = respawnPosition;
 
             Physics2D.SyncTransforms();
 
-            // نرجع الإعداد القديم
             rb.interpolation = oldInterpolation;
             rb.WakeUp();
         }
@@ -88,11 +89,17 @@ public class PlayerRespawnHandler : MonoBehaviour
             Physics2D.SyncTransforms();
         }
 
+        ClearStatusEffectsEverywhere();
+
         EnableColliders(true);
         EnableBehaviours(true);
 
+        ClearStatusEffectsEverywhere();
+
         if (playerHealth != null)
             playerHealth.Revive(fillHealthAfterRespawn);
+
+        ClearStatusEffectsEverywhere();
     }
 
     private Vector3 GetRespawnPosition()
@@ -104,6 +111,22 @@ public class PlayerRespawnHandler : MonoBehaviour
             return startPosition;
 
         return transform.position;
+    }
+
+    private void ClearStatusEffectsEverywhere()
+    {
+        PlayerStatusEffects[] effects = GetComponentsInChildren<PlayerStatusEffects>(true);
+
+        for (int i = 0; i < effects.Length; i++)
+        {
+            if (effects[i] != null)
+                effects[i].ClearAllEffects();
+        }
+
+        PlayerStatusEffects parentEffect = GetComponentInParent<PlayerStatusEffects>();
+
+        if (parentEffect != null)
+            parentEffect.ClearAllEffects();
     }
 
     private void EnableBehaviours(bool enabled)

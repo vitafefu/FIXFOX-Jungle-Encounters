@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class PlayerDamageReceiver : MonoBehaviour
@@ -10,6 +10,7 @@ public class PlayerDamageReceiver : MonoBehaviour
 
     private PlayerHealth playerHealth;
     private KnockbackReceiver2D knockbackReceiver;
+    private PlayerStatusEffects statusEffects;
 
     private SpriteRenderer[] spriteRenderers;
     private Color[] originalColors;
@@ -31,7 +32,15 @@ public class PlayerDamageReceiver : MonoBehaviour
         playerHealth = GetComponent<PlayerHealth>();
         knockbackReceiver = GetComponent<KnockbackReceiver2D>();
 
-        spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
+        statusEffects = GetComponent<PlayerStatusEffects>();
+
+        if (statusEffects == null)
+            statusEffects = GetComponentInParent<PlayerStatusEffects>();
+
+        if (statusEffects == null)
+            statusEffects = GetComponentInChildren<PlayerStatusEffects>();
+
+        spriteRenderers = GetComponentsInChildren<SpriteRenderer>(true);
         originalColors = new Color[spriteRenderers.Length];
 
         for (int i = 0; i < spriteRenderers.Length; i++)
@@ -41,6 +50,7 @@ public class PlayerDamageReceiver : MonoBehaviour
         }
     }
 
+    // للأعداء والضرر العادي
     public bool ReceiveDamage(DamageData damageData)
     {
         if (playerHealth == null)
@@ -51,8 +61,8 @@ public class PlayerDamageReceiver : MonoBehaviour
         if (!damageApplied)
             return false;
 
-        if (useDamageFlash)
-            StartDamageFlash();
+        // أي ضرر ناجح لازم يعمل فلاش أحمر
+        PlayDamageFlash();
 
         if (knockbackReceiver != null)
             knockbackReceiver.ApplyKnockback(damageData);
@@ -60,21 +70,85 @@ public class PlayerDamageReceiver : MonoBehaviour
         return true;
     }
 
-    private void StartDamageFlash()
+    // للأشواك والـ hazards
+    public bool ReceiveHazardDamage(DamageData damageData)
     {
+        if (playerHealth == null)
+            return false;
+
+        bool damageApplied = playerHealth.TakeHazardDamage(damageData);
+
+        if (!damageApplied)
+            return false;
+
+        // مهم:
+        // حتى ضرر الشوك لازم يعمل فلاش أحمر.
+        // إذا اللاعب مسموم، PlayDamageFlash سيطلب من PlayerStatusEffects
+        // أن يعمل الفلاش ثم يرجع اللون أخضر.
+        PlayDamageFlash();
+
+        if (knockbackReceiver != null)
+            knockbackReceiver.ApplyKnockback(damageData);
+
+        return true;
+    }
+
+    public void PlayDamageFlash()
+    {
+        if (!useDamageFlash)
+            return;
+
+        if (playerHealth != null && playerHealth.IsDead)
+            return;
+
+        // إذا اللاعب مسموم:
+        // لا نستخدم الفلاش العادي، لأن الفلاش العادي يرجع اللون للأصلي.
+        // نحن نريد أحمر ثم أخضر.
+        if (statusEffects != null && statusEffects.IsPoisonActive)
+        {
+            statusEffects.PlayPoisonDamageFlash();
+            return;
+        }
+
+        // إذا اللاعب غير مسموم:
+        // فلاش أحمر ثم رجوع للون الأصلي.
         if (damageFlashRoutine != null)
             StopCoroutine(damageFlashRoutine);
 
-        damageFlashRoutine = StartCoroutine(DamageFlashRoutine());
+        damageFlashRoutine = StartCoroutine(DamageFlashRoutine(damageFlashColor, damageFlashDuration));
     }
 
-    private IEnumerator DamageFlashRoutine()
+    public void PlayCustomFlash(Color flashColor, float duration)
     {
-        SetSpriteColor(damageFlashColor);
+        if (playerHealth != null && playerHealth.IsDead)
+            return;
 
-        yield return new WaitForSeconds(damageFlashDuration);
+        // إذا اللاعب مسموم، لا نسمح لفلاش خارجي أن يرجعه للون الأصلي.
+        // نعطيه فلاش السم الأحمر ثم يرجع أخضر.
+        if (statusEffects != null && statusEffects.IsPoisonActive)
+        {
+            statusEffects.PlayPoisonDamageFlash();
+            return;
+        }
 
-        RestoreSpriteColors();
+        if (damageFlashRoutine != null)
+            StopCoroutine(damageFlashRoutine);
+
+        damageFlashRoutine = StartCoroutine(DamageFlashRoutine(flashColor, duration));
+    }
+
+    private IEnumerator DamageFlashRoutine(Color color, float duration)
+    {
+        SetSpriteColor(color);
+
+        yield return new WaitForSeconds(duration);
+
+        // إذا أثناء الفلاش صار اللاعب مسموم، لا نرجعه للأصلي.
+        // خلي PlayerStatusEffects يرجعه للأخضر.
+        if (statusEffects != null && statusEffects.IsPoisonActive)
+            statusEffects.PlayPoisonDamageFlash();
+        else
+            RestoreSpriteColors();
 
         damageFlashRoutine = null;
     }
