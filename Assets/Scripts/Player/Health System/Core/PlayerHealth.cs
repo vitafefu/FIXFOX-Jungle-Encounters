@@ -59,6 +59,40 @@ public class PlayerHealth : MonoBehaviour
         if (damageData.AmountUnits <= 0)
             return false;
 
+        ApplyHealthLoss(damageData);
+
+        if (!isDead)
+            invincibilityTimer = invincibilityDuration;
+
+        return true;
+    }
+
+    public bool TakeHazardDamage(DamageData damageData)
+    {
+        if (isDead)
+            return false;
+
+        if (damageData.AmountUnits <= 0)
+            return false;
+
+        ApplyHealthLoss(damageData);
+        return true;
+    }
+
+    public bool TakeStatusDamage(DamageData damageData)
+    {
+        if (isDead)
+            return false;
+
+        if (damageData.AmountUnits <= 0)
+            return false;
+
+        ApplyHealthLoss(damageData);
+        return true;
+    }
+
+    private void ApplyHealthLoss(DamageData damageData)
+    {
         currentHealthUnits -= damageData.AmountUnits;
         currentHealthUnits = Mathf.Clamp(currentHealthUnits, 0, maxHealthUnits);
 
@@ -69,15 +103,7 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player Health: " + currentHealthUnits + "/" + maxHealthUnits);
 
         if (currentHealthUnits <= 0)
-        {
             Die();
-        }
-        else
-        {
-            invincibilityTimer = invincibilityDuration;
-        }
-
-        return true;
     }
 
     public void Heal(int amountUnits)
