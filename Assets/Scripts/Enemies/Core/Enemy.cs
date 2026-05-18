@@ -64,6 +64,8 @@ public class Enemy : MonoBehaviour, IDamageable
     /// </summary>
     public virtual bool ReceiveDamage(DamageData damageData)
     {
+        Debug.Log($"Enemy.ReceiveDamage called. Amount: {damageData.AmountUnits}, Source: {damageData.SourceObject?.name}, IsDead: {isDead}");
+
         if (isDead)
             return false;
 
@@ -72,6 +74,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
         currentHealthUnits -= damageData.AmountUnits;
         currentHealthUnits = Mathf.Clamp(currentHealthUnits, 0, maxHealthUnits);
+
+        Debug.Log($"Enemy health: {currentHealthUnits}/{maxHealthUnits}");
 
         OnDamaged?.Invoke(damageData);
         NotifyHealthChanged();
@@ -177,4 +181,5 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         OnHealthChanged?.Invoke(currentHealthUnits, maxHealthUnits);
     }
+    
 }
