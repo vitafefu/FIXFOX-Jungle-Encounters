@@ -599,40 +599,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateRunInput()
     {
-        if (allowShiftRun)
-        {
-            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-            {
-                isRunning = Mathf.Abs(moveInputX) > 0.01f && !isCrouching;
-                runDirection = moveInputX > 0f ? 1 : moveInputX < 0f ? -1 : 0;
-                return;
-            }
-        }
-
-        if (!allowDoubleTapRun)
-            return;
-
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            if (Time.time - lastLeftTapTime <= doubleTapTime)
-            {
-                isRunning = true;
-                runDirection = -1;
-            }
-
-            lastLeftTapTime = Time.time;
-        }
-
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            if (Time.time - lastRightTapTime <= doubleTapTime)
-            {
-                isRunning = true;
-                runDirection = 1;
-            }
-
-            lastRightTapTime = Time.time;
-        }
+        isRunning = Mathf.Abs(moveInputX) > 0.01f && !isCrouching;
     }
 
     private void StopRunIfNeeded()
