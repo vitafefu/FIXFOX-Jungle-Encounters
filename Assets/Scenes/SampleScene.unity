@@ -30564,6 +30564,8 @@ GameObject:
   - component: {fileID: 1617743686}
   - component: {fileID: 1617743685}
   - component: {fileID: 1617743689}
+  - component: {fileID: 1617743690}
+  - component: {fileID: 1617743691}
   m_Layer: 0
   m_Name: simpleEnemy
   m_TagString: Untagged
@@ -30661,7 +30663,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 8
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 7.5
   m_Material: {fileID: 6200000, guid: 3916303c361756f4d9cdace52f13bed4, type: 2}
@@ -30726,6 +30728,39 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &1617743690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617743684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e47e5b57cfe504eba184374ce26d50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1050405700}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.15
+--- !u!114 &1617743691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617743684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c70ab656f49eb4295074b4be0e8938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableKnockback: 1
+  resetVelocityBeforeKnockback: 1
+  knockbackControlLockTime: 0.18
+  useBurstVelocity: 1
+  useDamageDataValuesAsVelocity: 1
+  behavioursToDisableDuringKnockback: []
 --- !u!1 &1635393153
 GameObject:
   m_ObjectHideFlags: 0

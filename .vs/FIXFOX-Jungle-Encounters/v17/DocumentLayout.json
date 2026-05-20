@@ -1,21 +1,48 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\",
+  "WorkspaceRootPath": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponAttackContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponAttackContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponHitbox2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponHitbox2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\DamageData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Combat\\DamageData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Knockback\\KnockbackReceiver2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Combat\\Knockback\\KnockbackReceiver2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Core\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Visual\\EnemyDamageFlash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Visual\\EnemyDamageFlash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Coins\\CoinUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Coins\\PlayerWallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Coins\\Coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,49 +53,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "KnockbackReceiver2D.cs",
-              "DocumentMoniker": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
-              "ToolTip": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "WeaponData.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponData.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T03:18:04.447Z",
+              "WhenOpened": "2026-05-20T04:33:37.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CoinUI.cs",
-              "DocumentMoniker": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Coins\\CoinUI.cs",
-              "ToolTip": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Coins\\CoinUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Title": "WeaponAttackContext.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponAttackContext.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponAttackContext.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponAttackContext.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponAttackContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T09:19:32.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-20T04:32:47.641Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "WeaponHitbox2D.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponHitbox2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponHitbox2D.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponHitbox2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Combat\\Weapons\\Core\\WeaponHitbox2D.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T04:32:17.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DamageData.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\DamageData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\DamageData.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\DamageData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Combat\\DamageData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T04:28:47.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnemyDamageFlash.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Visual\\EnemyDamageFlash.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Visual\\EnemyDamageFlash.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Visual\\EnemyDamageFlash.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Visual\\EnemyDamageFlash.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T04:03:56.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KnockbackReceiver2D.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Knockback\\KnockbackReceiver2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\Knockback\\KnockbackReceiver2D.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Knockback\\KnockbackReceiver2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Combat\\Knockback\\KnockbackReceiver2D.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:50:43.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAIBJwEIAAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:39:55.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KnockbackReceiver2D.cs",
+              "DocumentMoniker": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
+              "ToolTip": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T03:18:04.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CoinUI.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Coins\\CoinUI.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Coins\\CoinUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T09:19:32.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PlayerWallet.cs",
-              "DocumentMoniker": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Coins\\PlayerWallet.cs",
-              "ToolTip": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Coins\\PlayerWallet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -76,29 +175,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Coin.cs",
-              "DocumentMoniker": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs",
+              "DocumentMoniker": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Coins\\Coin.cs",
-              "ToolTip": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs",
+              "ToolTip": "D:\\\u0412 \u0440\u0430\u0431\u043E\u0442\u0435\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B\\1. \u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0430\\\u041A\u0423\u0420\u0421\u041E\u0412\u0410\u042F \u0420\u0410\u0411\u041E\u0422\u0410\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs",
               "RelativeToolTip": "Assets\\Scripts\\Coins\\Coin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-06T08:20:44.935Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 809,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{08a1bf1d-7967-4afc-8253-1790862ab8c9}"
             }
           ]
         }

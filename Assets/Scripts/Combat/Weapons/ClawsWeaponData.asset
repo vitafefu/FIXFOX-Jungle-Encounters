@@ -17,8 +17,8 @@ MonoBehaviour:
   weaponSlotIndex: 0
   damageUnits: 2
   damageType: 0
-  knockbackForceX: 5
-  knockbackForceY: 2
+  knockbackForceX: 20
+  knockbackForceY: 10
   attackCooldown: 0.4
   hitboxActivationTime: 0.1
   hitboxActiveDuration: 0.15
