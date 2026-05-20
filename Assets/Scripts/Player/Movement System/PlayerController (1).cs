@@ -5,6 +5,11 @@
 [RequireComponent(typeof(PlayerSensors))]
 public class PlayerController : MonoBehaviour
 {
+    [Header("Stomp (Jump on Enemy)")]
+    [SerializeField] private int stompDamageUnits = 4;      // урон при прыжке на врага (4 = целое сердце)
+    [SerializeField] private float bounceForceAfterStomp = 8f; // отскок после убийства
+
+
     [Header("Horizontal Movement")]
     [SerializeField] private float walkSpeed = 5f;
     [SerializeField] private float runSpeed = 8f;
@@ -602,6 +607,35 @@ public class PlayerController : MonoBehaviour
         isRunning = Mathf.Abs(moveInputX) > 0.01f && !isCrouching;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+{
+    Enemy enemy = collision.collider.GetComponent<Enemy>();
+    if (enemy == null || enemy.IsDead) return;
+
+    bool isFallingDown = rb.velocity.y < 0;
+    if (!isFallingDown) return;
+
+
+    bool isStomp = false;
+    foreach (ContactPoint2D contact in collision.contacts)
+    {
+
+        if (contact.normal.y > 0.7f) 
+        {
+            isStomp = true;
+            break;
+        }
+    }
+
+    if (isStomp)
+    {
+        enemy.TakeDamage(stompDamageUnits);
+        rb.velocity = new Vector2(rb.velocity.x, bounceForceAfterStomp);
+
+        return;
+    }
+
+}
     private void StopRunIfNeeded()
     {
         if (allowShiftRun && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
