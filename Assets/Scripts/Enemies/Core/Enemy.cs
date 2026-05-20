@@ -58,6 +58,10 @@ public class Enemy : MonoBehaviour, IDamageable
         NotifyHealthChanged();
     }
 
+    /// <summary>
+    /// Future-ready damage receiving method.
+    /// Use this later when player weapons, projectiles, traps, etc. damage the enemy.
+    /// </summary>
     public virtual bool ReceiveDamage(DamageData damageData)
     {
         Debug.Log($"Enemy.ReceiveDamage called. Amount: {damageData.AmountUnits}, Source: {damageData.SourceObject?.name}, IsDead: {isDead}");
@@ -85,6 +89,10 @@ public class Enemy : MonoBehaviour, IDamageable
         return true;
     }
 
+    /// <summary>
+    /// Simple helper for future testing.
+    /// Example: enemy.TakeDamage(1) = quarter heart damage.
+    /// </summary>
     public virtual bool TakeDamage(int amountUnits)
     {
         DamageData damageData = new DamageData(
@@ -105,17 +113,8 @@ public class Enemy : MonoBehaviour, IDamageable
             return;
 
         isDead = true;
-
-        // Находим игрока и добавляем монеты
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            PlayerWallet wallet = player.GetComponent<PlayerWallet>();
-            if (wallet != null)
-                wallet.AddCoins(5);
-        }
-
         OnDied?.Invoke();
+
         Destroy(gameObject);
     }
 
@@ -182,4 +181,5 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         OnHealthChanged?.Invoke(currentHealthUnits, maxHealthUnits);
     }
+    
 }

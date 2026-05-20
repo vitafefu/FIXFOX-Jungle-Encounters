@@ -4330,6 +4330,7 @@ GameObject:
   - component: {fileID: 495250383}
   - component: {fileID: 495250384}
   - component: {fileID: 495250385}
+  - component: {fileID: 495250386}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4441,8 +4442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e667e46504d70df4fbb21587cd0677f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stompDamageUnits: 4
-  bounceForceAfterStomp: 8
   walkSpeed: 11.5
   runSpeed: 13.5
   groundAcceleration: 190
@@ -4704,6 +4703,24 @@ MonoBehaviour:
   attackCooldown: 0.4
   hitboxActivationTime: 0.1
   hitboxActiveDuration: 0.15
+--- !u!114 &495250386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495250366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c70ab656f49eb4295074b4be0e8938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableKnockback: 1
+  resetVelocityBeforeKnockback: 1
+  knockbackControlLockTime: 0.18
+  useBurstVelocity: 1
+  useDamageDataValuesAsVelocity: 1
+  behavioursToDisableDuringKnockback: []
 --- !u!1 &520987373
 GameObject:
   m_ObjectHideFlags: 0
@@ -30738,6 +30755,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c70ab656f49eb4295074b4be0e8938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableKnockback: 1
+  resetVelocityBeforeKnockback: 1
+  knockbackControlLockTime: 0.18
+  useBurstVelocity: 1
+  useDamageDataValuesAsVelocity: 1
+  behavioursToDisableDuringKnockback: []
 --- !u!1 &1635393153
 GameObject:
   m_ObjectHideFlags: 0
