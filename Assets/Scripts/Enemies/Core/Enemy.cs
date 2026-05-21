@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using UnityEngine;
 
 /// <summary>
@@ -98,7 +98,6 @@ public class Enemy : MonoBehaviour, IDamageable
 
         return ReceiveDamage(damageData);
     }
-
     protected virtual void Die()
     {
         if (isDead)
@@ -106,13 +105,12 @@ public class Enemy : MonoBehaviour, IDamageable
 
         isDead = true;
 
-        // Находим игрока и добавляем монеты
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
-            PlayerWallet wallet = player.GetComponent<PlayerWallet>();
-            if (wallet != null)
-                wallet.AddCoins(5);
+            PlayerKillCounter killCounter = player.GetComponent<PlayerKillCounter>();
+            if (killCounter != null)
+                killCounter.AddKill();
         }
 
         OnDied?.Invoke();
