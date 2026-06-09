@@ -22,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealthUnits;
     private float invincibilityTimer;
     private bool isDead;
+    private PlayerAudioController playerAudio;
 
     public int UnitsPerHeart => unitsPerHeart;
     public int CurrentHealthUnits => currentHealthUnits;
@@ -36,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
         startHealthUnits = Mathf.Clamp(startHealthUnits, 0, maxHealthUnits);
 
         currentHealthUnits = startHealthUnits;
+        playerAudio = GetComponent<PlayerAudioController>();
     }
 
     private void Start()
@@ -95,7 +97,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealthUnits -= damageData.AmountUnits;
         currentHealthUnits = Mathf.Clamp(currentHealthUnits, 0, maxHealthUnits);
-
+        playerAudio?.PlayDamage();
         OnDamaged?.Invoke(damageData);
         NotifyHealthChanged();
 

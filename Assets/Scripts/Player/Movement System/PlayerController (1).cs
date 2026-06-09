@@ -61,6 +61,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private CapsuleCollider2D capsuleCol;
     private PlayerSensors sensors;
+    private PlayerAudioController playerAudio;
+    public PlayerAudioController PlayerAudio => playerAudio;
 
     private Vector2 standingColliderSize;
     private Vector2 standingColliderOffset;
@@ -161,6 +163,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         capsuleCol = GetComponent<CapsuleCollider2D>();
         sensors = GetComponent<PlayerSensors>();
+        playerAudio = GetComponent<PlayerAudioController>();
 
         defaultGravityScale = rb.gravityScale;
 
@@ -208,6 +211,7 @@ public class PlayerController : MonoBehaviour
         StopRunIfNeeded();
 
         currentState?.Tick();
+        UpdatePlayerAudio();
     }
 
     private void FixedUpdate()
@@ -373,6 +377,7 @@ public class PlayerController : MonoBehaviour
             {
                 isCrouching = true;
                 ApplyCrouchingCollider();
+                playerAudio?.PlayCrouch();
             }
 
             return;
@@ -609,6 +614,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
 {
+    playerAudio?.PlayHit();
     Enemy enemy = collision.collider.GetComponent<Enemy>();
     if (enemy == null || enemy.IsDead) return;
 
@@ -630,6 +636,7 @@ public class PlayerController : MonoBehaviour
     if (isStomp)
     {
         enemy.TakeDamage(stompDamageUnits);
+        playerAudio?.PlayEnemyHit();
         rb.velocity = new Vector2(rb.velocity.x, bounceForceAfterStomp);
 
         return;
@@ -650,7 +657,20 @@ public class PlayerController : MonoBehaviour
         if ((runDirection == 1 && moveInputX < 0f) || (runDirection == -1 && moveInputX > 0f))
             ResetRun();
     }
+    private void UpdatePlayerAudio()
+    {
+        if (playerAudio == null)
+            return;
 
+        bool shouldPlayRun =
+            IsGrounded &&
+            !isCrouching &&
+            !isClimbing &&
+            Mathf.Abs(moveInputX) > 0.01f &&
+            Mathf.Abs(rb.velocity.x) > 0.1f;
+
+        playerAudio.SetRunning(shouldPlayRun);
+    }
     private void OnDisable()
     {
         SetGroundCollisionIgnored(false);
