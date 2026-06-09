@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 45434806}
   - component: {fileID: 45434804}
   - component: {fileID: 45434803}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   startMovingRight: 0
   detectionRange: 67
   chaseSpeed: 11
-  attackRange: 1.5
+  attackRange: 30
   attackCooldown: 2
   attackPauseDuration: 1
   idleSprite1: {fileID: 21300000, guid: 4b9df50ea867c724e9c60405dc6aae98, type: 3}
@@ -227,7 +227,9 @@ MonoBehaviour:
   playerStartX: -122.08
   safeZoneRadiusX: 2
   retreatDistance: 30
-  retreatSpeed: 4
+  retreatSpeed: 5
+  fireballPrefab: {fileID: 852062067465283039, guid: ffdd41097e4042b449a92af20275a49d, type: 3}
+  firePoint: {fileID: 1149843779}
 --- !u!50 &45434806
 Rigidbody2D:
   serializedVersion: 4
@@ -264,10 +266,11 @@ Transform:
   m_GameObject: {fileID: 45434802}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.9, y: -342.9, z: 0}
-  m_LocalScale: {x: 43.924053, y: 45.068798, z: 45.068798}
+  m_LocalPosition: {x: 73.8492, y: -342.9, z: 0}
+  m_LocalScale: {x: 44.099747, y: 45.068798, z: 45.068798}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1149843779}
   - {fileID: 767588061}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5152,7 +5155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 767588061}
   - component: {fileID: 767588062}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bosscollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5219,6 +5222,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1149843778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1149843779}
+  m_Layer: 10
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1149843779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149843778}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.010462785, z: -0, w: 0.99994534}
+  m_LocalPosition: {x: -0.1, y: -0.0139997285, z: 0}
+  m_LocalScale: {x: 0.19999999, y: 0.2, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 45434807}
+  m_LocalEulerAnglesHint: {x: 0, y: 1.199, z: 0}
 --- !u!1 &1384584949
 GameObject:
   m_ObjectHideFlags: 0
