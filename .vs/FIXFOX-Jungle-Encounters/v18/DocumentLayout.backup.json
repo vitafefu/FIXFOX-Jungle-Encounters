@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\LevelFinishZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\LevelFinishZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\UI\\KillCounterUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\KillCounterUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\UI\\KillCounterUICreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\KillCounterUICreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerKillCounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerKillCounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Core\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Health System\\Death\\PlayerDeathHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\Health System\\Death\\PlayerDeathHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,19 +79,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LevelFinishZone.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\LevelFinishZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelFinishZone.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\LevelFinishZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelFinishZone.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T10:49:01.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KillCounterUICreator.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\UI\\KillCounterUICreator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\KillCounterUICreator.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\UI\\KillCounterUICreator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\KillCounterUICreator.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T10:28:47.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KillCounterUI.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\UI\\KillCounterUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\KillCounterUI.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\UI\\KillCounterUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\KillCounterUI.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T10:26:20.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerKillCounter.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerKillCounter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerKillCounter.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\PlayerKillCounter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerKillCounter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T10:18:42.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PlayerDeathHandler.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Health System\\Death\\PlayerDeathHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Health System\\Death\\PlayerDeathHandler.cs",
               "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Health System\\Death\\PlayerDeathHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Health System\\Death\\PlayerDeathHandler.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAwwDUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAcwGYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-10T09:42:26.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "PlayerDamageReceiver.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Health System\\Damage\\PlayerDamageReceiver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Health System\\Damage\\PlayerDamageReceiver.cs",
@@ -79,12 +151,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Health System\\Damage\\PlayerDamageReceiver.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAuwGkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T09:40:24.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T09:40:24.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "KnockbackReceiver2D.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Knockback\\KnockbackReceiver2D.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\Knockback\\KnockbackReceiver2D.cs",
@@ -92,12 +163,24 @@
               "RelativeToolTip": "Assets\\Scripts\\Combat\\Knockback\\KnockbackReceiver2D.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAuwJYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T09:38:23.385Z",
+              "WhenOpened": "2026-05-10T09:38:23.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "ToolTip": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAcwHUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T10:17:30.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "GroundState.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\States\\GroundState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\States\\GroundState.cs",
@@ -105,12 +188,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Movement System\\States\\GroundState.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAuwD4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T08:01:31.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T08:01:31.095Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "TopTouchHazard2D.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\Hazards\\TopTouchHazard2D.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Combat\\Hazards\\TopTouchHazard2D.cs",
@@ -118,12 +200,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Combat\\Hazards\\TopTouchHazard2D.cs",
               "ViewState": "AgIAAIoAAAAAAAAAAAAuwKMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T08:19:41.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T08:19:41.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "PlayerAnimatorBridge.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerAnimatorBridge.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\PlayerAnimatorBridge.cs",
@@ -131,12 +212,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Movement System\\PlayerAnimatorBridge.cs",
               "ViewState": "AgIAALIAAAAAAAAAAAAwwMsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T08:48:47.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T08:48:47.186Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "PlayerController (1).cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerController (1).cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\PlayerController (1).cs",
@@ -148,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "LadderState.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\States\\LadderState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\States\\LadderState.cs",
@@ -160,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "PlayerSensors.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Movement System\\PlayerSensors.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement System\\PlayerSensors.cs",
@@ -172,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "PlayerStatusEffects1.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Health System\\Damage\\PlayerStatusEffects1.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Health System\\Damage\\PlayerStatusEffects1.cs",
@@ -184,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "PlayerStatusEffects.cs",
               "DocumentMoniker": "C:\\Users\\akram\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Player\\Health System\\Damage\\PlayerStatusEffects.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Health System\\Damage\\PlayerStatusEffects.cs",
@@ -192,8 +272,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Health System\\Damage\\PlayerStatusEffects.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T09:45:45.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T09:45:45.912Z"
             }
           ]
         }

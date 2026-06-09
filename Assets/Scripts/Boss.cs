@@ -8,13 +8,13 @@ public class Boss : Enemy
     [SerializeField] private bool startMovingRight = false;
 
     [Header("Boss: Vision & Chase")]
-    [SerializeField] private float detectionRange = 5f;
+    [SerializeField] private float detectionRange = 15f;
     [SerializeField] private float chaseSpeed = 3f;
 
     [Header("Boss: Attack")]
-    [SerializeField] private float attackRange = 1.5f;
-    [SerializeField] private float attackCooldown = 2f;
-    [SerializeField] private float attackPauseDuration = 1f;
+    [SerializeField] private float attackRange = 12f;
+    [SerializeField] private float attackCooldown = 1.5f;
+    [SerializeField] private float attackPauseDuration = 0.5f;
 
     [Header("Sprite Animation")]
     [SerializeField] private Sprite idleSprite1;
@@ -23,10 +23,14 @@ public class Boss : Enemy
     [SerializeField] private bool spriteLooksRightByDefault = false;
 
     [Header("Safe Zone (Player Start X only)")]
-    [SerializeField] private float playerStartX = -122.08f;   // только X координата
-    [SerializeField] private float safeZoneRadiusX = 2f;      // расстояние по X, при котором срабатывает отступление
+    [SerializeField] private float playerStartX = -122.08f;
+    [SerializeField] private float safeZoneRadiusX = 2f;
     [SerializeField] private float retreatDistance = 30f;
     [SerializeField] private float retreatSpeed = 5f;
+
+    [Header("Boss: Fireball")]
+    public GameObject fireballPrefab;
+    public Transform firePoint;
 
     private Transform player;
     private SpriteRenderer spriteRenderer;
@@ -39,7 +43,7 @@ public class Boss : Enemy
 
     private float leftBoundary;
     private float rightBoundary;
-    private float startX;          // стартовая позиция босса (X)
+    private float startX;
 
     private bool isRetreating = false;
     private float retreatTargetX;
@@ -48,6 +52,8 @@ public class Boss : Enemy
     private enum State { Patrol, Chase, Attack }
     private State currentState = State.Patrol;
     private bool movingRight;
+
+    private float lastAttackTime;
 
     protected override void Awake()
     {
@@ -73,16 +79,20 @@ public class Boss : Enemy
 
         movingRight = startMovingRight;
         UpdateFacing();
+
+        lastAttackTime = Time.time;
     }
 
     private void Update()
     {
         if (IsDead) return;
 
-        if (attackTimer > 0) attackTimer -= Time.deltaTime;
-        if (attackPauseTimer > 0) attackPauseTimer -= Time.deltaTime;
+        if (attackTimer > 0)
+            attackTimer -= Time.deltaTime;
 
-        // Проверка безопасной зоны только по X
+        if (attackPauseTimer > 0)
+            attackPauseTimer -= Time.deltaTime;
+
         if (!isRetreating)
         {
             float distanceX = Mathf.Abs(transform.position.x - playerStartX);
@@ -97,7 +107,18 @@ public class Boss : Enemy
             DetermineState();
         }
 
-        // Анимация спрайтов
+        if (!isRetreating && player != null && fireballPrefab != null && firePoint != null)
+        {
+            float distanceToPlayer = Mathf.Abs(transform.position.x - player.position.x);
+            bool canSeePlayer = distanceToPlayer <= detectionRange;
+
+            if (canSeePlayer && Time.time - lastAttackTime >= attackCooldown)
+            {
+                lastAttackTime = Time.time;
+                ShootFireball();
+            }
+        }
+
         if (!isAttacking && !isRetreating)
         {
             animationTimer += Time.deltaTime;
@@ -150,7 +171,7 @@ public class Boss : Enemy
                     break;
 
                 case State.Attack:
-                    StopMoving();
+                    ChasePlayer();
                     break;
             }
         }
@@ -162,7 +183,7 @@ public class Boss : Enemy
     {
         if (player == null) return;
 
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        float distanceToPlayer = Mathf.Abs(transform.position.x - player.position.x);
         bool canAttack = attackTimer <= 0 && !isAttacking && attackPauseTimer <= 0;
 
         if (distanceToPlayer <= attackRange && canAttack)
@@ -186,7 +207,6 @@ public class Boss : Enemy
         {
             isAttacking = false;
             attackTimer = attackCooldown;
-            PerformAttack();
             DetermineState();
         }
     }
@@ -199,7 +219,6 @@ public class Boss : Enemy
 
         float bossX = transform.position.x;
 
-        // Отступаем в сторону, противоположную направлению к стартовой позиции игрока
         if (bossX < playerStartX)
         {
             retreatingRight = false;
@@ -210,8 +229,6 @@ public class Boss : Enemy
             retreatingRight = true;
             retreatTargetX = bossX + retreatDistance;
         }
-
-        Debug.Log($"Retreat started. Target X: {retreatTargetX}");
     }
 
     private void Retreat()
@@ -225,7 +242,6 @@ public class Boss : Enemy
         {
             isRetreating = false;
             rb.velocity = new Vector2(0, rb.velocity.y);
-            Debug.Log("Retreat finished.");
         }
     }
 
@@ -256,11 +272,6 @@ public class Boss : Enemy
         movingRight = direction > 0;
     }
 
-    private void StopMoving()
-    {
-        rb.velocity = new Vector2(0, rb.velocity.y);
-    }
-
     private void UpdateFacing()
     {
         bool shouldFaceRight = movingRight;
@@ -271,9 +282,43 @@ public class Boss : Enemy
             spriteRenderer.flipX = shouldFaceRight;
     }
 
-    private void PerformAttack()
+    private void ShootFireball()
     {
-        Debug.Log("BOSS ATTACK (placeholder)");
+        if (player == null || fireballPrefab == null || firePoint == null) return;
+
+        Collider2D bossCollider = GetComponent<Collider2D>();
+        if (bossCollider != null)
+        {
+            bossCollider.enabled = false;
+        }
+
+        GameObject fireball = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
+
+        Vector2 direction = (player.position - firePoint.position).normalized;
+
+        Rigidbody2D rbFireball = fireball.GetComponent<Rigidbody2D>();
+        if (rbFireball != null)
+        {
+            rbFireball.velocity = direction * 12f;
+            rbFireball.gravityScale = 0f;
+        }
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        fireball.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        if (bossCollider != null)
+        {
+            Invoke(nameof(EnableBossCollider), 0.1f);
+        }
+    }
+
+    private void EnableBossCollider()
+    {
+        Collider2D bossCollider = GetComponent<Collider2D>();
+        if (bossCollider != null)
+        {
+            bossCollider.enabled = true;
+        }
     }
 
     private void OnDrawGizmosSelected()
@@ -310,7 +355,6 @@ public class Boss : Enemy
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
 
-        // Визуализация безопасной зоны (только по X)
         Gizmos.color = Color.green;
         Vector3 safeCenter = new Vector3(playerStartX, transform.position.y, 0);
         Gizmos.DrawWireSphere(safeCenter, safeZoneRadiusX);
