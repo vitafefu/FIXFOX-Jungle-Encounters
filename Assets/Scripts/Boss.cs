@@ -29,7 +29,6 @@ public class Boss : Enemy
     [SerializeField] private float retreatSpeed = 5f;
 
     private Transform player;
-    private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
 
     private bool isAttacking;
@@ -53,7 +52,7 @@ public class Boss : Enemy
     protected override void Awake()
     {
         base.Awake();
-        rb = GetComponent<Rigidbody2D>();
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
             spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
@@ -62,8 +61,11 @@ public class Boss : Enemy
     protected override void Start()
     {
         base.Start();
+
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
-        if (idleSprite1 != null) spriteRenderer.sprite = idleSprite1;
+
+        if (idleSprite1 != null)
+            spriteRenderer.sprite = idleSprite1;
 
         startX = transform.position.x;
         leftBoundary = startX - patrolDistance;
@@ -103,7 +105,9 @@ public class Boss : Enemy
             {
                 animationTimer = 0;
                 showFirstSprite = !showFirstSprite;
-                spriteRenderer.sprite = showFirstSprite ? idleSprite1 : idleSprite2;
+
+                if (idleSprite1 != null && idleSprite2 != null)
+                    spriteRenderer.sprite = showFirstSprite ? idleSprite1 : idleSprite2;
             }
         }
         else if (isAttacking)
@@ -118,7 +122,9 @@ public class Boss : Enemy
             {
                 animationTimer = 0;
                 showFirstSprite = !showFirstSprite;
-                spriteRenderer.sprite = showFirstSprite ? idleSprite1 : idleSprite2;
+
+                if (idleSprite1 != null && idleSprite2 != null)
+                    spriteRenderer.sprite = showFirstSprite ? idleSprite1 : idleSprite2;
             }
         }
     }
@@ -135,11 +141,20 @@ public class Boss : Enemy
         {
             switch (currentState)
             {
-                case State.Patrol: Patrol(); break;
-                case State.Chase: ChasePlayer(); break;
-                case State.Attack: StopMoving(); break;
+                case State.Patrol:
+                    Patrol();
+                    break;
+
+                case State.Chase:
+                    ChasePlayer();
+                    break;
+
+                case State.Attack:
+                    StopMoving();
+                    break;
             }
         }
+
         UpdateFacing();
     }
 
@@ -179,6 +194,7 @@ public class Boss : Enemy
     private void StartRetreat()
     {
         if (isRetreating) return;
+
         isRetreating = true;
 
         float bossX = transform.position.x;
@@ -218,12 +234,14 @@ public class Boss : Enemy
         if (movingRight)
         {
             rb.velocity = new Vector2(patrolSpeed, rb.velocity.y);
+
             if (transform.position.x >= rightBoundary)
                 movingRight = false;
         }
         else
         {
             rb.velocity = new Vector2(-patrolSpeed, rb.velocity.y);
+
             if (transform.position.x <= leftBoundary)
                 movingRight = true;
         }
@@ -232,6 +250,7 @@ public class Boss : Enemy
     private void ChasePlayer()
     {
         if (player == null) return;
+
         float direction = Mathf.Sign(player.position.x - transform.position.x);
         rb.velocity = new Vector2(direction * chaseSpeed, rb.velocity.y);
         movingRight = direction > 0;
@@ -245,6 +264,7 @@ public class Boss : Enemy
     private void UpdateFacing()
     {
         bool shouldFaceRight = movingRight;
+
         if (spriteLooksRightByDefault)
             spriteRenderer.flipX = !shouldFaceRight;
         else
@@ -258,7 +278,9 @@ public class Boss : Enemy
 
     private void OnDrawGizmosSelected()
     {
-        float left, right;
+        float left;
+        float right;
+
         if (Application.isPlaying)
         {
             left = leftBoundary;
@@ -272,19 +294,30 @@ public class Boss : Enemy
         }
 
         Gizmos.color = Color.blue;
-        Gizmos.DrawLine(new Vector3(left, transform.position.y - 0.5f), new Vector3(left, transform.position.y + 0.5f));
-        Gizmos.DrawLine(new Vector3(right, transform.position.y - 0.5f), new Vector3(right, transform.position.y + 0.5f));
+        Gizmos.DrawLine(
+            new Vector3(left, transform.position.y - 0.5f),
+            new Vector3(left, transform.position.y + 0.5f)
+        );
+
+        Gizmos.DrawLine(
+            new Vector3(right, transform.position.y - 0.5f),
+            new Vector3(right, transform.position.y + 0.5f)
+        );
 
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
+
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
 
-        // Визуализация безопасной зоны (только по X) – вертикальная линия с кружками
+        // Визуализация безопасной зоны (только по X)
         Gizmos.color = Color.green;
         Vector3 safeCenter = new Vector3(playerStartX, transform.position.y, 0);
         Gizmos.DrawWireSphere(safeCenter, safeZoneRadiusX);
-        // Дополнительно: вертикальная линия для наглядности
-        Gizmos.DrawLine(new Vector3(playerStartX, transform.position.y - 0.5f), new Vector3(playerStartX, transform.position.y + 0.5f));
+
+        Gizmos.DrawLine(
+            new Vector3(playerStartX, transform.position.y - 0.5f),
+            new Vector3(playerStartX, transform.position.y + 0.5f)
+        );
     }
 }
