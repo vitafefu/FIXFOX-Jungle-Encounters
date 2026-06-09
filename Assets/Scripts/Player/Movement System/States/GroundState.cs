@@ -58,6 +58,8 @@ public class GroundState : PlayerMovementState
         if (controller.CanUseBufferedJump())
         {
             velocity.y = controller.JumpForce;
+            controller.PlayerAudio?.PlayJump();
+
             controller.ConsumeJump();
             controller.SetCrouching(false);
             controller.ApplyStandingCollider();
