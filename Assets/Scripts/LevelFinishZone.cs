@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;  // ← добавили для загрузки сцен
 
 public class LevelFinishZone : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class LevelFinishZone : MonoBehaviour
     [Header("Messages")]
     [SerializeField] private string completeTitle = "Поздравляем!";
     [SerializeField] private string completeMessage = "Первый этап завершён";
+
+    [Header("Boss Transition")]
+    [SerializeField] private string bossSceneName = "boss";   // имя сцены с боссом
+    [SerializeField] private float delayBeforeTransition = 6f; // задержка 6 секунд
 
     private int totalEnemiesAtStart;
     private bool levelCompleted;
@@ -85,5 +90,14 @@ public class LevelFinishZone : MonoBehaviour
         }
 
         levelCompletePanel.SetActive(true);
+
+        // ★ ЗАПУСКАЕМ ПЕРЕХОД НА СЦЕНУ БОССА ЧЕРЕЗ 6 СЕКУНД ★
+        Invoke(nameof(LoadBossScene), delayBeforeTransition);
+    }
+
+    // ★ МЕТОД ЗАГРУЗКИ СЦЕНЫ БОССА ★
+    private void LoadBossScene()
+    {
+        SceneManager.LoadScene(bossSceneName);
     }
 }

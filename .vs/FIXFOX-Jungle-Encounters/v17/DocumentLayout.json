@@ -1,28 +1,44 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\unity\\FIXFOX-Jungle-Encounters\\",
+  "WorkspaceRootPath": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\FIXFOX-Jungle-Encounters\\Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Movement\\SimpleEnemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Movement\\SimpleEnemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Enemies\\Core\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\BossPlayerSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\BossPlayerSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\LevelFinishZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\LevelFinishZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Coins\\CoinUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Coins\\PlayerWallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Coins\\Coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -33,19 +49,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Boss.cs",
+              "DocumentMoniker": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Boss.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Boss.cs",
+              "ToolTip": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Boss.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Boss.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAUwCEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:17:02.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SimpleEnemy.cs",
+              "DocumentMoniker": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Movement\\SimpleEnemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Movement\\SimpleEnemy.cs",
+              "ToolTip": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Movement\\SimpleEnemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Movement\\SimpleEnemy.cs",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAiwBsBAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T07:10:37.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BossPlayerSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\BossPlayerSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BossPlayerSpawner.cs",
+              "ToolTip": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\BossPlayerSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BossPlayerSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T06:58:46.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LevelFinishZone.cs",
+              "DocumentMoniker": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\LevelFinishZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelFinishZone.cs",
+              "ToolTip": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\LevelFinishZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelFinishZone.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwGYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T06:35:54.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ToolbarController.cs",
-              "DocumentMoniker": "D:\\unity\\FIXFOX-Jungle-Encounters\\Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs",
-              "ToolTip": "D:\\unity\\FIXFOX-Jungle-Encounters\\Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs",
+              "ToolTip": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs",
               "RelativeToolTip": "Library\\PackageCache\\com.unity.collab-proxy@2.11.4\\Editor\\UVCSToolbar\\ToolbarController.cs",
               "ViewState": "AgIAACYBAAAAAAAAAAAewDIBAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -54,33 +138,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Enemy.cs",
-              "DocumentMoniker": "D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
-              "ToolTip": "D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
+              "ToolTip": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\Core\\Enemy.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAwwLgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAiwLYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-20T04:32:17.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "KnockbackReceiver2D.cs",
               "DocumentMoniker": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
               "ToolTip": "C:\\Users\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\nika\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Combat\\KnockbackReceiver2D.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-18T03:18:04.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CoinUI.cs",
-              "DocumentMoniker": "D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs",
+              "DocumentMoniker": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Coins\\CoinUI.cs",
-              "ToolTip": "D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs",
+              "ToolTip": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\CoinUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\Coins\\CoinUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -88,11 +174,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PlayerWallet.cs",
-              "DocumentMoniker": "D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs",
+              "DocumentMoniker": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Coins\\PlayerWallet.cs",
-              "ToolTip": "D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs",
+              "ToolTip": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\PlayerWallet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Coins\\PlayerWallet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -100,11 +186,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Coin.cs",
-              "DocumentMoniker": "D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs",
+              "DocumentMoniker": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Coins\\Coin.cs",
-              "ToolTip": "D:\\unity\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs",
+              "ToolTip": "C:\\Users\\\u0448\u043E\u043D\\Documents\\GitHub\\FIXFOX-Jungle-Encounters\\Assets\\Scripts\\Coins\\Coin.cs",
               "RelativeToolTip": "Assets\\Scripts\\Coins\\Coin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
