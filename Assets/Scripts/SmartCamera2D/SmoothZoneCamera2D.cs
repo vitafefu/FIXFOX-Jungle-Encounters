@@ -129,6 +129,29 @@ public class SmoothZoneCamera2D : MonoBehaviour
         );
     }
 
+    public void ForceSnapToTarget(Transform newTarget = null)
+    {
+        if (newTarget != null)
+        {
+            target = newTarget;
+            targetRb = target.GetComponent<Rigidbody2D>();
+        }
+
+        if (target == null)
+            return;
+
+        focusCenter = target.position;
+        focusVelocity = Vector2.zero;
+        cameraVelocity = Vector3.zero;
+        currentOffsetY = baseOffset.y;
+
+        transform.position = new Vector3(
+            focusCenter.x + baseOffset.x,
+            focusCenter.y + currentOffsetY,
+            cameraZ
+        );
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
