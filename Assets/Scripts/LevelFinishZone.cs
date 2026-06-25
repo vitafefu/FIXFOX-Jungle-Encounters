@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using TMPro;
 
 public class LevelFinishZone : MonoBehaviour
@@ -16,6 +17,11 @@ public class LevelFinishZone : MonoBehaviour
 
     [Header("Camera")]
     [SerializeField] private bool moveCameraWithPlayer = true;
+
+    [Header("Music")]
+    [SerializeField] private AudioSource levelMusicSource;
+    [SerializeField] private AudioSource bossMusicSource;
+    [SerializeField] private float musicFadeDuration = 1.5f;
 
     [Header("Debug")]
     [SerializeField] private bool showDebugLogs = true;
@@ -36,6 +42,11 @@ public class LevelFinishZone : MonoBehaviour
         if (levelCompletePanel != null)
             levelCompletePanel.SetActive(false);
 
+        if (bossMusicSource != null)
+        {
+            bossMusicSource.Stop();
+            bossMusicSource.volume = 0f;
+        }
         CreateBossRespawnPoint();
         FindAndSubscribeToBoss();
 
@@ -43,6 +54,39 @@ public class LevelFinishZone : MonoBehaviour
         {
             Debug.Log("LevelFinishZone started.");
             Debug.Log("Boss found automatically: " + (boss != null));
+        }
+    }
+    private IEnumerator SwitchToBossMusic()
+    {
+        if (levelMusicSource != null)
+        {
+            float startVolume = levelMusicSource.volume;
+            float timer = 0f;
+
+            while (timer < musicFadeDuration)
+            {
+                timer += Time.deltaTime;
+                levelMusicSource.volume = Mathf.Lerp(startVolume, 0f, timer / musicFadeDuration);
+                yield return null;
+            }
+
+            levelMusicSource.Stop();
+            levelMusicSource.volume = startVolume;
+        }
+
+        if (bossMusicSource != null)
+        {
+            bossMusicSource.volume = 0f;
+            bossMusicSource.Play();
+
+            float timer = 0f;
+
+            while (timer < musicFadeDuration)
+            {
+                timer += Time.deltaTime;
+                bossMusicSource.volume = Mathf.Lerp(0f, 0.7f, timer / musicFadeDuration);
+                yield return null;
+            }
         }
     }
 
@@ -107,9 +151,10 @@ public class LevelFinishZone : MonoBehaviour
             return;
 
         teleportedToBoss = true;
-
+        StartCoroutine(SwitchToBossMusic());
         UpdatePlayerRespawnPoint();
         TeleportPlayer(player);
+        
 
         if (moveCameraWithPlayer)
             ForceCameraSnapToPlayer(player);
